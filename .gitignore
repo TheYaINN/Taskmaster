@@ -1,0 +1,16 @@
+### IntelliJ IDEA ###
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.iws
+*.ipr
+
+### other ###
+/local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
