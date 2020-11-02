@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">TaskMaster</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="login_button">Login</string>
+    <string name="login_forgotPassword">Forgot Password</string>
+    <string name="login_register">Register</string>
+    <string name="hint_username_email">Username / E-mail</string>
+    <string name="hint_password">Password</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_group">Groups</string>
+    <string name="title_list">Lists</string>
 </resources>

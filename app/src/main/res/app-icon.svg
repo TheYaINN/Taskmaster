@@ -1,0 +1,27 @@
+<svg data-name="Ebene 1" id="Ebene_1" viewBox="0 0 163.54 151.75"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .cls-1,.cls-4{fill:none;stroke:#000;}.cls-1,.cls-2,.cls-3,.cls-4{stroke-miterlimit:10;}.cls-1{stroke-width:2px;}.cls-2{fill:#ed1c24;stroke:#c1272d;}.cls-3{fill:#8cc63f;stroke:#39b54a;}.cls-4{stroke-width:10px;}
+        </style>
+    </defs>
+    <rect class="cls-1" height="41.22" width="45.11" x="4.35" y="1" />
+    <rect class="cls-1" height="41.22" width="45.11" x="4.35" y="52.22" />
+    <rect class="cls-1" height="41.22" width="45.11" x="4.35" y="103.33" />
+    <polygon class="cls-2"
+        points="0.99 100.62 4.77 96.84 28.09 120.16 51.41 96.84 55.2 100.63 31.88 123.94 55.2 147.26 51.41 151.05 28.09 127.73 4.77 151.04 0.71 147.02 24.31 123.94 0.99 100.62" />
+    <path d="M125.92,89" transform="translate(-6.32 -25.56)" />
+    <polygon class="cls-3"
+        points="7.25 73.87 10.78 70.33 25.02 84.56 56.83 52.74 60.28 56.19 24.93 91.54 7.25 73.87" />
+    <polygon class="cls-3"
+        points="6.83 22.71 10.37 19.17 24.6 33.41 56.42 1.58 59.87 5.03 24.51 40.39 6.83 22.71" />
+    <path class="cls-4"
+        d="M66.18,150.44h8.71c4.5,0,18.64,1.68,25.36,1,16.44-1.73,29.95-5.15,37.67-4.42,9.75.92,25.4,3.44,26.94,3.44h4.25"
+        transform="translate(-6.32 -25.56)" />
+    <path class="cls-4"
+        d="M66.18,103.2h8.71c4.5,0,16.28-4.39,23-5.09a220.6,220.6,0,0,1,40.67,0c9.75.92,24.76,5.09,26.3,5.09h4.25"
+        transform="translate(-6.32 -25.56)" />
+    <path class="cls-4"
+        d="M66.18,49.74h8.71c4.5,0,15.84-2.84,22.55-3.54,16.45-1.72,32.62,1.62,40.34,2.34,9.75.92,25.54,1.2,27.08,1.2h4.25"
+        transform="translate(-6.32 -25.56)" />
+</svg>

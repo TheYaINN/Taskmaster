@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.home
+package de.joachimsohn.ui.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,18 +8,19 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import de.joachimsohn.R
 
-class HomeFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+class ProfileFragment : Fragment() {
+
+    private lateinit var profileViewModel: ProfileViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-            ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        profileViewModel =
+            ViewModelProviders.of(this).get(ProfileViewModel::class.java)
+        return inflater.inflate(R.layout.fragment_profile_private, container, false)
     }
 
 }
