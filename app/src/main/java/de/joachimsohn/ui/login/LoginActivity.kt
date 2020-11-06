@@ -3,13 +3,11 @@ package de.joachimsohn.ui.login
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.*
 import de.joachimsohn.R
-import de.joachimsohn.ui.NavigationHelper
 import de.joachimsohn.ui.app.AppActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -48,14 +46,6 @@ class LoginActivity : AppCompatActivity() {
             finish()
         } else {
             //TODO: show some error on UI
-        }
-    }
-
-    fun changeView(view: View) {
-        if (view is Button) {
-            NavigationHelper.navigateDown(this, RegisterFragment())
-        } else {
-            //TODO:
         }
     }
 

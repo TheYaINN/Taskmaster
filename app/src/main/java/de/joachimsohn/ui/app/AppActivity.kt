@@ -18,4 +18,5 @@ class AppActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
+
 }
