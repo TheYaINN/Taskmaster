@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.home
+package de.joachimsohn.ui.app.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

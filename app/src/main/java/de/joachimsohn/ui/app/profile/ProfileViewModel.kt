@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.profile
+package de.joachimsohn.ui.app.profile
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.groups
+package de.joachimsohn.ui.app.groups
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

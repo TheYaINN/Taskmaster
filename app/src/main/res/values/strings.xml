@@ -9,4 +9,5 @@
     <string name="title_profile">Profile</string>
     <string name="title_group">Groups</string>
     <string name="title_list">Lists</string>
+    <string name="version_number">Version ${version}</string>
 </resources>

@@ -1,90 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/colorPrimaryDark"
     android:onClick="changeView">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <!--            TODO: android:drawableEnd="@drawable/peek_password"-->
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="TaskMaster"
-        android:textSize="@dimen/title"
+        android:drawableStart="@drawable/person"
+        android:gravity="start"
+        android:hint="@string/hint_username_email"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:orientation="vertical"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/lock"
+        android:gravity="start"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/username" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:drawableStart="@drawable/person"
-            android:hint="@string/hint_username_email"
-            android:inputType="text"
-            android:maxLines="1" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="login"
+        android:text="@string/login_button"
+        app:layout_constraintBottom_toTopOf="@id/forgot_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        tools:layout_editor_absoluteX="161dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:drawableStart="@drawable/lock"
-            android:hint="@string/hint_password"
-            android:inputType="textPassword"
-            android:maxLines="1" />
-        <!--            TODO: android:drawableEnd="@drawable/peek_password"-->
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/colorAccent"
-            android:onClick="login"
-            android:text="@string/login_button" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:clickable="true"
-            android:onClick="changeView"
-            android:text="@string/login_forgotPassword" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="@color/colorPrimaryDark" />
-
-        <Button
-            android:id="@+id/register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@android:color/transparent"
-            android:onClick="changeView"
-            android:text="@string/login_register"
-            android:textSize="@dimen/text" />
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="changeView"
+        android:text="@string/login_forgotPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="551dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

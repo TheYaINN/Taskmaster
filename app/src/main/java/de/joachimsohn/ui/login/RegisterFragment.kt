@@ -1,4 +1,4 @@
-package de.joachimsohn.ui
+package de.joachimsohn.ui.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,7 +15,7 @@ class RegisterFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return layoutInflater.inflate(R.layout.register, container, false)
+        return layoutInflater.inflate(R.layout.fragment_register, container, false)
     }
 
 }

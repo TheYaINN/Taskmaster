@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.profile
+package de.joachimsohn.ui.app.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater

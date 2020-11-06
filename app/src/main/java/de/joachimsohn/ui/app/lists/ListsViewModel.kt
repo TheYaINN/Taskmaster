@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.lists
+package de.joachimsohn.ui.app.lists
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

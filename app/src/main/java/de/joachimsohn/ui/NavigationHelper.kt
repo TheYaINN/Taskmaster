@@ -3,9 +3,9 @@ package de.joachimsohn.ui
 import android.app.Activity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import de.joachimsohn.LoginActivity
 import de.joachimsohn.R
-import de.joachimsohn.ui.home.HomeFragment
+import de.joachimsohn.ui.app.home.HomeFragment
+import de.joachimsohn.ui.login.LoginActivity
 
 class NavigationHelper {
 

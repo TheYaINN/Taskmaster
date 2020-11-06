@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.groups
+package de.joachimsohn.ui.app.lists
 
 import android.os.Bundle
 import android.view.*
@@ -6,20 +6,19 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import de.joachimsohn.R
 
-class GroupsFragment : Fragment() {
+class ListsFragment : Fragment() {
 
-    private lateinit var groupsViewModel: GroupsViewModel
+    private lateinit var listsViewModel: ListsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        groupsViewModel =
-            ViewModelProviders.of(this).get(GroupsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_group_lists, container, false)
+        listsViewModel =
+            ViewModelProviders.of(this).get(ListsViewModel::class.java)
         setHasOptionsMenu(true)
-        return root
+        return inflater.inflate(R.layout.fragment_group_lists, container, false)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

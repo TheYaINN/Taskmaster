@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.groups.GroupsFragment">
+    tools:context=".ui.app.groups.GroupsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Version 1.0.0"
+        android:text="@string/version_number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
 
