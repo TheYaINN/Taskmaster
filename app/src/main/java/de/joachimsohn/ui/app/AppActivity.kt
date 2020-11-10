@@ -22,7 +22,7 @@ class AppActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         supportActionBar?.let {
-            it.setHomeAsUpIndicator(R.drawable.ic_home_black_24dp)
+            it.setHomeAsUpIndicator(R.drawable.home)
             it.setDisplayHomeAsUpEnabled(true)
             it.setDisplayShowHomeEnabled(true)
             it.setDisplayShowTitleEnabled(false)

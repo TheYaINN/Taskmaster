@@ -2,7 +2,14 @@
 <resources>
     <color name="colorPrimary">#8F8F8F</color>
     <color name="colorPrimaryDark">#5E5E5E</color>
-    <color name="colorAccent">#0091EA</color>
-    <color name="colorSecondary">#333333</color>
+    <color name="colorSecondary">#7B1FA2</color>
+
+    <!-- Icon colors -->
+    <color name="icon_primary">#1F1F1F</color>
+    <color name="icon_secondary">#26C6DA</color>
+
+    <!-- Context Colors -->
     <color name="warning">#F44336</color>
+    <color name="error">#FDD835</color>
+    <color name="success">#43A047</color>
 </resources>
