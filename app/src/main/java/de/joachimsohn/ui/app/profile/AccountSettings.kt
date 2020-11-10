@@ -10,7 +10,7 @@ class AccountSettings : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         setHasOptionsMenu(true)
-        return layoutInflater.inflate(R.layout.fragment_account_settings, container, false)
+        return inflater.inflate(R.layout.fragment_account_settings, container, false)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

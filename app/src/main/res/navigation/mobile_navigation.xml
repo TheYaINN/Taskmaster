@@ -13,15 +13,23 @@
 
     <fragment
         android:id="@+id/navigation_list"
-        android:name="de.joachimsohn.ui.app.lists.ListsFragment"
+        android:name="de.joachimsohn.ui.app.lists.ListFragment"
         android:label="@string/title_list"
-        tools:layout="@layout/fragment_list" />
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_navigation_list_to_listEditorFragment"
+            app:destination="@id/list_editor" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_group"
         android:name="de.joachimsohn.ui.app.groups.GroupsFragment"
         android:label="@string/title_group"
-        tools:layout="@layout/fragment_list" />
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_navigation_group_to_groupEditorFragment"
+            app:destination="@id/group_editor" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_profile"
@@ -45,5 +53,15 @@
         android:name="de.joachimsohn.ui.app.profile.NotificationSettings"
         android:label="NotificationSettings"
         tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/list_editor"
+        android:name="de.joachimsohn.ui.app.lists.ListEditorFragment"
+        android:label="ListEditorFragment"
+        tools:layout="@layout/fragment_list_edit" />
+    <fragment
+        android:id="@+id/group_editor"
+        android:name="de.joachimsohn.ui.app.groups.GroupEditorFragment"
+        android:label="GroupEditorFragment"
+        tools:layout="@layout/fragment_group_edit" />
 
 </navigation>

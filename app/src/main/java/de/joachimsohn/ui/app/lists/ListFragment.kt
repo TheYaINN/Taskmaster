@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.app.groups
+package de.joachimsohn.ui.app.lists
 
 import android.os.Bundle
 import android.view.*
@@ -8,19 +8,19 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import de.joachimsohn.R
 
-class GroupsFragment : Fragment() {
+class ListFragment : Fragment() {
 
-    private lateinit var groupsViewModel: GroupsViewModel
+    private lateinit var listViewModel: ListViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        groupsViewModel = ViewModelProviders.of(this).get(GroupsViewModel::class.java)
+        listViewModel = ViewModelProviders.of(this).get(ListViewModel::class.java)
         setHasOptionsMenu(true)
-        return inflater.inflate(R.layout.fragment_group, container, false)
+        return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         view.findViewById<FloatingActionButton>(R.id.add_item).setOnClickListener {
-            findNavController().navigate(R.id.action_navigation_group_to_groupEditorFragment)
+            findNavController().navigate(R.id.action_navigation_list_to_listEditorFragment)
         }
     }
 
