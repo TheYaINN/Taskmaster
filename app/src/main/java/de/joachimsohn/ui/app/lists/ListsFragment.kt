@@ -10,15 +10,10 @@ class ListsFragment : Fragment() {
 
     private lateinit var listsViewModel: ListsViewModel
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        listsViewModel =
-            ViewModelProviders.of(this).get(ListsViewModel::class.java)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        listsViewModel = ViewModelProviders.of(this).get(ListsViewModel::class.java)
         setHasOptionsMenu(true)
-        return inflater.inflate(R.layout.fragment_group_lists, container, false)
+        return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

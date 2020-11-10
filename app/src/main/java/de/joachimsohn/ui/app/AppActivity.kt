@@ -25,6 +25,7 @@ class AppActivity : AppCompatActivity() {
             it.setHomeAsUpIndicator(R.drawable.ic_home_black_24dp)
             it.setDisplayHomeAsUpEnabled(true)
             it.setDisplayShowHomeEnabled(true)
+            it.setDisplayShowTitleEnabled(false)
         }
 
     }

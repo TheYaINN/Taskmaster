@@ -15,13 +15,13 @@
         android:id="@+id/navigation_list"
         android:name="de.joachimsohn.ui.app.lists.ListsFragment"
         android:label="@string/title_list"
-        tools:layout="@layout/fragment_group_lists" />
+        tools:layout="@layout/fragment_list" />
 
     <fragment
         android:id="@+id/navigation_group"
         android:name="de.joachimsohn.ui.app.groups.GroupsFragment"
         android:label="@string/title_group"
-        tools:layout="@layout/fragment_group_lists" />
+        tools:layout="@layout/fragment_list" />
 
     <fragment
         android:id="@+id/navigation_profile"

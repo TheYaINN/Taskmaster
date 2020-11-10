@@ -10,14 +10,9 @@ class GroupsFragment : Fragment() {
 
     private lateinit var groupsViewModel: GroupsViewModel
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        groupsViewModel =
-            ViewModelProviders.of(this).get(GroupsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_group_lists, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        groupsViewModel = ViewModelProviders.of(this).get(GroupsViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_group, container, false)
         setHasOptionsMenu(true)
         return root
     }
