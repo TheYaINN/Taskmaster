@@ -27,6 +27,23 @@
         android:id="@+id/navigation_profile"
         android:name="de.joachimsohn.ui.app.profile.ProfileFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/fragment_profile_private" />
+        tools:layout="@layout/fragment_profile_private">
+        <action
+            android:id="@+id/action_navigation_profile_to_accountSettings"
+            app:destination="@id/accountSettings" />
+        <action
+            android:id="@+id/action_navigation_profile_to_notificationSettings"
+            app:destination="@id/notification_settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSettings"
+        android:name="de.joachimsohn.ui.app.profile.AccountSettings"
+        android:label="AccountSettings"
+        tools:layout="@layout/fragment_account_settings" />
+    <fragment
+        android:id="@+id/notification_settings"
+        android:name="de.joachimsohn.ui.app.profile.NotificationSettings"
+        android:label="NotificationSettings"
+        tools:layout="@layout/fragment_notification" />
 
 </navigation>

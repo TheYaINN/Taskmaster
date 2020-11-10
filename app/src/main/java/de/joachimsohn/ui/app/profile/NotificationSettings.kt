@@ -6,11 +6,11 @@ import androidx.fragment.app.Fragment
 import de.joachimsohn.R
 import de.joachimsohn.ui.app.AppActivity
 
-class AccountSettings : Fragment() {
+class NotificationSettings : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         setHasOptionsMenu(true)
-        return layoutInflater.inflate(R.layout.fragment_account_settings, container, false)
+        return layoutInflater.inflate(R.layout.fragment_notification, container, false)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
