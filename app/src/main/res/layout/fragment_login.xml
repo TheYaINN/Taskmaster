@@ -6,7 +6,7 @@
     android:backgroundTint="@color/colorPrimaryDark">
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/username_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/person"
@@ -14,7 +14,6 @@
         android:hint="@string/hint_username_email"
         android:inputType="text"
         android:maxLines="1"
-        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,15 +24,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:drawableStart="@drawable/lock"
-        android:drawableEnd="@drawable/peek_password"
         android:gravity="start"
         android:hint="@string/hint_password"
         android:inputType="textPassword"
         android:maxLines="1"
-        app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/username_email" />
 
     <Button
         android:id="@+id/login"
@@ -44,10 +41,9 @@
         android:backgroundTint="@color/colorSecondary"
         android:onClick="login"
         android:text="@string/login_button"
-        app:layout_constraintBottom_toTopOf="@id/forgot_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password" />
+        app:layout_constraintTop_toBottomOf="@id/remember_password" />
 
     <TextView
         android:id="@+id/forgot_password"
@@ -60,5 +56,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <CheckBox
+        android:id="@+id/remember_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@id/password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

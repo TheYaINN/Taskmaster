@@ -4,12 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.FrameLayout
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.*
 import de.joachimsohn.R
 import de.joachimsohn.ui.app.AppActivity
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -19,6 +21,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        setupUI()
+    }
+
+
+    private fun setupUI() {
         val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
         val viewPager = findViewById<ViewPager>(R.id.viewPager)
         val indicator = findViewById<View>(R.id.tab_indicator)
@@ -53,29 +60,36 @@ class LoginActivity : AppCompatActivity() {
         viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
                 val params = indicator.layoutParams as FrameLayout.LayoutParams
-
-                //Multiply positionOffset with indicatorWidth to get translation
                 val translationOffset: Float = (positionOffset + position) * indicatorWidth
                 params.leftMargin = translationOffset.toInt()
                 indicator.layoutParams = params
             }
 
             override fun onPageSelected(position: Int) {}
-
             override fun onPageScrollStateChanged(state: Int) {}
 
         })
-
     }
 
     fun login(view: View) {
         //TODO: some checking and show error if wrong
         if (true) {
+            /* if (view.findViewById<CheckBox>(R.id.remember_password).isChecked) {
+                 saveLoginData()
+             }*/
             startActivity(Intent(this, AppActivity::class.java))
             finish()
         } else {
             //TODO: show some error on UI
         }
+    }
+
+    private fun saveLoginData() {
+        val sp = getSharedPreferences("Login", MODE_PRIVATE)
+        val ed = sp.edit()
+        ed.putString("Unm", findViewById<TextView>(R.id.username_email).text.toString())
+        ed.putString("Psw", findViewById<TextView>(R.id.password).text.toString())
+        ed.apply()
     }
 
 }
