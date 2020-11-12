@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -33,6 +34,10 @@ class ProfileFragment : Fragment() {
             findNavController().navigate(R.id.action_navigation_profile_to_accountSettings)
         }
         view.findViewById<Button>(R.id.sign_out).setOnClickListener {
+            requireContext().getSharedPreferences(
+                "Taskmaster-Login",
+                AppCompatActivity.MODE_PRIVATE
+            ).edit().clear().apply()
             startActivity(Intent(requireContext(), LoginActivity::class.java))
             requireActivity().finish()
         }

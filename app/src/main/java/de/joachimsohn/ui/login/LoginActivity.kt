@@ -3,6 +3,7 @@ package de.joachimsohn.ui.login
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.CheckBox
 import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,9 @@ import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.*
 import de.joachimsohn.R
+import de.joachimsohn.auth.AuthManager
+import de.joachimsohn.auth.LocalAuthHelper
+import de.joachimsohn.auth.UserInformation
 import de.joachimsohn.ui.app.AppActivity
 
 
@@ -20,8 +24,15 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
+        if (AuthManager.login(LocalAuthHelper.getLoginInformation(applicationContext))) {
+            startMainActivity()
+        }
         setupUI()
+    }
+
+    private fun startMainActivity() {
+        startActivity(Intent(this, AppActivity::class.java))
+        finish()
     }
 
 
@@ -52,13 +63,18 @@ class LoginActivity : AppCompatActivity() {
 
         tabLayout.post {
             indicatorWidth = tabLayout.width / tabLayout.tabCount
-            val indicatorParams: FrameLayout.LayoutParams = indicator.layoutParams as FrameLayout.LayoutParams
+            val indicatorParams: FrameLayout.LayoutParams =
+                indicator.layoutParams as FrameLayout.LayoutParams
             indicatorParams.width = indicatorWidth
             indicator.layoutParams = indicatorParams
         }
 
         viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
-            override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+            override fun onPageScrolled(
+                position: Int,
+                positionOffset: Float,
+                positionOffsetPixels: Int
+            ) {
                 val params = indicator.layoutParams as FrameLayout.LayoutParams
                 val translationOffset: Float = (positionOffset + position) * indicatorWidth
                 params.leftMargin = translationOffset.toInt()
@@ -71,25 +87,18 @@ class LoginActivity : AppCompatActivity() {
         })
     }
 
-    fun login(view: View) {
-        //TODO: some checking and show error if wrong
-        if (true) {
-            /* if (view.findViewById<CheckBox>(R.id.remember_password).isChecked) {
-                 saveLoginData()
-             }*/
-            startActivity(Intent(this, AppActivity::class.java))
-            finish()
+    fun tryLogin(view: View) {
+        val username = findViewById<TextView>(R.id.username_email).text.toString()
+        val password = findViewById<TextView>(R.id.password).text.toString()
+
+        if (AuthManager.login(UserInformation(username, password))) {
+            if (findViewById<CheckBox>(R.id.remember_password).isChecked) {
+                LocalAuthHelper.saveLoginInformation(applicationContext, username, password)
+            }
+            startMainActivity()
         } else {
             //TODO: show some error on UI
         }
-    }
-
-    private fun saveLoginData() {
-        val sp = getSharedPreferences("Login", MODE_PRIVATE)
-        val ed = sp.edit()
-        ed.putString("Unm", findViewById<TextView>(R.id.username_email).text.toString())
-        ed.putString("Psw", findViewById<TextView>(R.id.password).text.toString())
-        ed.apply()
     }
 
 }

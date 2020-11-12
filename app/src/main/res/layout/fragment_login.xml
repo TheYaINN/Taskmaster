@@ -40,7 +40,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/Secondary"
-        android:onClick="login"
+        android:onClick="tryLogin"
         android:text="@string/login_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
