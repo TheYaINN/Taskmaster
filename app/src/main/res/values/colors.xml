@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#8F8F8F</color>
-    <color name="colorPrimaryDark">#5E5E5E</color>
-    <color name="colorSecondary">#7B1FA2</color>
+    <color name="Primary">#8F8F8F</color>
+    <color name="PrimaryDark">#5E5E5E</color>
+    <color name="Secondary">#7B1FA2</color>
+    <color name="background">#FDFDFD</color>
+    <color name="backgroundDark">#EFEFEF</color>
 
     <!-- Icon colors -->
     <color name="icon_primary">#1F1F1F</color>

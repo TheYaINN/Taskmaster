@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
+import de.joachimsohn.BuildConfig
 import de.joachimsohn.R
 import de.joachimsohn.ui.login.LoginActivity
 
@@ -26,6 +28,9 @@ class ProfileFragment : Fragment() {
         view.findViewById<Button>(R.id.account_settings).setOnClickListener {
             findNavController().navigate(R.id.action_navigation_profile_to_accountSettings)
         }
+
+        view.findViewById<TextView>(R.id.version).text =
+            "VERSION ${BuildConfig.VERSION_CODE} (${BuildConfig.VERSION_NAME})"
 
         view.findViewById<Button>(R.id.sign_out).setOnClickListener {
             startActivity(Intent(requireContext(), LoginActivity::class.java))
