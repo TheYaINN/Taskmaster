@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:hint="Firstname"
+            android:inputType="textPersonName"
             android:maxLines="1" />
 
         <EditText
@@ -24,6 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:hint="Lastname"
+            android:inputType="textPersonName"
             android:maxLines="1" />
 
         <EditText
@@ -31,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:hint="Username"
+            android:inputType="text"
             android:maxLines="1" />
 
         <EditText
@@ -38,6 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:hint="Password"
+            android:inputType="textPassword"
             android:maxLines="1" />
 
         <EditText
@@ -45,6 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:hint="E-Mail"
+            android:inputType="textEmailAddress"
             android:maxLines="1" />
 
         <EditText
@@ -52,6 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:hint="Home Address"
+            android:inputType="textPostalAddress"
             android:maxLines="1" />
 
         <EditText
@@ -59,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:hint="Work Address"
+            android:inputType="textPostalAddress"
             android:maxLines="1" />
 
         <Button
@@ -70,5 +77,4 @@
             android:text="@string/login_register" />
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@ import androidx.navigation.fragment.findNavController
 import de.joachimsohn.R
 import de.joachimsohn.ui.app.AppActivity
 
-open class ProfileFragmentBase(private val resourceID: Int) : Fragment() {
+open class SubFragment(private val resourceID: Int) : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,

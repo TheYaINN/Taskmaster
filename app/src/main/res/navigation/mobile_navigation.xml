@@ -42,15 +42,18 @@
         <action
             android:id="@+id/action_navigation_profile_to_notificationSettings"
             app:destination="@id/notification_settings" />
+        <action
+            android:id="@+id/action_navigation_profile_to_publicProfileFragment"
+            app:destination="@id/publicProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/accountSettings"
-        android:name="de.joachimsohn.ui.app.profile.AccountSettings"
+        android:name="de.joachimsohn.ui.app.profile.AccountSettingsFragment"
         android:label="AccountSettings"
         tools:layout="@layout/fragment_account_settings" />
     <fragment
         android:id="@+id/notification_settings"
-        android:name="de.joachimsohn.ui.app.profile.NotificationSettings"
+        android:name="de.joachimsohn.ui.app.profile.NotificationSettingsFragment"
         android:label="NotificationSettings"
         tools:layout="@layout/fragment_notification" />
     <fragment
@@ -63,5 +66,10 @@
         android:name="de.joachimsohn.ui.app.groups.GroupEditorFragment"
         android:label="GroupEditorFragment"
         tools:layout="@layout/fragment_group_edit" />
+    <fragment
+        android:id="@+id/publicProfileFragment"
+        android:name="de.joachimsohn.ui.app.profile.PublicProfileFragment"
+        android:label="PublicProfileFragment"
+        tools:layout="@layout/fragment_profile_public" />
 
 </navigation>

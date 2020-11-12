@@ -39,6 +39,9 @@ class ProfileFragment : Fragment() {
         view.findViewById<Button>(R.id.notifications).setOnClickListener {
             findNavController().navigate(R.id.action_navigation_profile_to_notificationSettings)
         }
+        view.findViewById<TextView>(R.id.visit_profile).setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_profile_to_publicProfileFragment)
+        }
 
         view.findViewById<TextView>(R.id.version).text =
             "VERSION ${BuildConfig.VERSION_CODE} (${BuildConfig.VERSION_NAME})"

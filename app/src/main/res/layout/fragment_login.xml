@@ -26,6 +26,7 @@
         android:drawableStart="@drawable/lock"
         android:gravity="start"
         android:hint="@string/hint_password"
+        android:imeOptions="actionSend"
         android:inputType="textPassword"
         android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
