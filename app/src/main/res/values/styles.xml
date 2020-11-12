@@ -11,9 +11,10 @@
         <item name="windowActionBar">false</item>
     </style>
 
-    <style name="bottom_nav_active">
+    <style name="bottom_nav_text_active">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/PrimaryDark</item>
     </style>
+
 
 </resources>

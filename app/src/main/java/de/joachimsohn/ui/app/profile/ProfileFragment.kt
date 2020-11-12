@@ -8,10 +8,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import de.joachimsohn.BuildConfig
 import de.joachimsohn.R
+import de.joachimsohn.ui.app.AppActivity
 import de.joachimsohn.ui.login.LoginActivity
 
 
@@ -20,7 +21,8 @@ class ProfileFragment : Fragment() {
     private lateinit var profileViewModel: ProfileViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        profileViewModel = ViewModelProviders.of(this).get(ProfileViewModel::class.java)
+        profileViewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
+        (activity as AppActivity).supportActionBar?.setHomeAsUpIndicator(R.drawable.home_filled)
         return inflater.inflate(R.layout.fragment_profile_private, container, false)
     }
 
@@ -28,7 +30,6 @@ class ProfileFragment : Fragment() {
         view.findViewById<Button>(R.id.account_settings).setOnClickListener {
             findNavController().navigate(R.id.action_navigation_profile_to_accountSettings)
         }
-
         view.findViewById<TextView>(R.id.version).text =
             "VERSION ${BuildConfig.VERSION_CODE} (${BuildConfig.VERSION_NAME})"
 
