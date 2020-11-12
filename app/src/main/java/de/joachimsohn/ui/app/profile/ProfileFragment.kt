@@ -20,9 +20,11 @@ class ProfileFragment : Fragment() {
 
     private lateinit var profileViewModel: ProfileViewModel
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View? {
         profileViewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
-        (activity as AppActivity).supportActionBar?.setHomeAsUpIndicator(R.drawable.home_filled)
+        (activity as AppActivity).supportActionBar?.setDisplayHomeAsUpEnabled(false)
         return inflater.inflate(R.layout.fragment_profile_private, container, false)
     }
 
@@ -30,17 +32,16 @@ class ProfileFragment : Fragment() {
         view.findViewById<Button>(R.id.account_settings).setOnClickListener {
             findNavController().navigate(R.id.action_navigation_profile_to_accountSettings)
         }
-        view.findViewById<TextView>(R.id.version).text =
-            "VERSION ${BuildConfig.VERSION_CODE} (${BuildConfig.VERSION_NAME})"
-
         view.findViewById<Button>(R.id.sign_out).setOnClickListener {
             startActivity(Intent(requireContext(), LoginActivity::class.java))
             requireActivity().finish()
         }
-
         view.findViewById<Button>(R.id.notifications).setOnClickListener {
             findNavController().navigate(R.id.action_navigation_profile_to_notificationSettings)
         }
+
+        view.findViewById<TextView>(R.id.version).text =
+            "VERSION ${BuildConfig.VERSION_CODE} (${BuildConfig.VERSION_NAME})"
 
     }
 
