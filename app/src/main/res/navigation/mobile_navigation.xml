@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_list"
-        android:name="de.joachimsohn.ui.app.lists.ListFragment"
+        android:name="de.joachimsohn.ui.app.list.ListFragment"
         android:label="@string/title_list"
         tools:layout="@layout/fragment_list">
         <action
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/navigation_group"
-        android:name="de.joachimsohn.ui.app.groups.GroupsFragment"
+        android:name="de.joachimsohn.ui.app.group.GroupsFragment"
         android:label="@string/title_group"
         tools:layout="@layout/fragment_list">
         <action
@@ -58,12 +58,12 @@
         tools:layout="@layout/fragment_notification" />
     <fragment
         android:id="@+id/list_editor"
-        android:name="de.joachimsohn.ui.app.lists.ListEditorFragment"
+        android:name="de.joachimsohn.ui.app.list.ListEditorFragment"
         android:label="ListEditorFragment"
         tools:layout="@layout/fragment_list_edit" />
     <fragment
         android:id="@+id/group_editor"
-        android:name="de.joachimsohn.ui.app.groups.GroupEditorFragment"
+        android:name="de.joachimsohn.ui.app.group.GroupEditorFragment"
         android:label="GroupEditorFragment"
         tools:layout="@layout/fragment_group_edit" />
     <fragment

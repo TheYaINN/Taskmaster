@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.app.lists
+package de.joachimsohn.ui.app.list
 
 import android.view.LayoutInflater
 import android.view.View

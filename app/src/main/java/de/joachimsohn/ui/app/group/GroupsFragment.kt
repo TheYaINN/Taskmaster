@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.app.lists
+package de.joachimsohn.ui.app.group
 
 import android.os.Bundle
 import android.view.*
@@ -9,22 +9,22 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import de.joachimsohn.R
 
-class ListFragment : Fragment() {
+class GroupsFragment : Fragment() {
 
-    private lateinit var listViewModel: ListViewModel
+    private lateinit var groupsViewModel: GroupsViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        listViewModel = ViewModelProviders.of(this).get(ListViewModel::class.java)
+        groupsViewModel = ViewModelProviders.of(this).get(GroupsViewModel::class.java)
         setHasOptionsMenu(true)
-        return inflater.inflate(R.layout.fragment_list, container, false)
+        return inflater.inflate(R.layout.fragment_group, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         view.findViewById<FloatingActionButton>(R.id.add_item).setOnClickListener {
-            findNavController().navigate(R.id.action_navigation_list_to_listEditorFragment)
+            findNavController().navigate(R.id.action_navigation_group_to_groupEditorFragment)
         }
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerview)
-        recyclerView.adapter = ListAdapter()
+        recyclerView.adapter = GroupAdapter()
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

@@ -1,13 +1,13 @@
-package de.joachimsohn.ui.app.lists
+package de.joachimsohn.ui.app.group
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class ListViewModel : ViewModel() {
+class GroupsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is Lists Fragment"
+        value = "Gruppen"
     }
     val text: LiveData<String> = _text
 }

@@ -1,4 +1,4 @@
-package de.joachimsohn.ui.app.groups
+package de.joachimsohn.ui.app.group
 
 import android.os.Bundle
 import android.view.LayoutInflater
