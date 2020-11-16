@@ -27,7 +27,6 @@ class AppActivity : AppCompatActivity() {
             it.setDisplayShowHomeEnabled(true)
             it.setDisplayShowTitleEnabled(false)
         }
-
     }
 
 

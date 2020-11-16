@@ -1,2 +1,3 @@
-include ':app'
-rootProject.name = "TaskMaster"
+rootProject.name = "TaskMaster-App"
+include 'app'
+include 'server'
