@@ -3,7 +3,7 @@ package de.joachimsohn.ui.app.group
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -14,7 +14,7 @@ class GroupsFragment : Fragment() {
     private lateinit var groupsViewModel: GroupsViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        groupsViewModel = ViewModelProviders.of(this).get(GroupsViewModel::class.java)
+        groupsViewModel = ViewModelProvider(this).get(GroupsViewModel::class.java)
         setHasOptionsMenu(true)
         return inflater.inflate(R.layout.fragment_group, container, false)
     }

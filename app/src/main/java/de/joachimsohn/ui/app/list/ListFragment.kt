@@ -3,7 +3,7 @@ package de.joachimsohn.ui.app.list
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -14,7 +14,7 @@ class ListFragment : Fragment() {
     private lateinit var listViewModel: ListViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        listViewModel = ViewModelProviders.of(this).get(ListViewModel::class.java)
+        listViewModel = ViewModelProvider(this).get(ListViewModel::class.java)
         setHasOptionsMenu(true)
         return inflater.inflate(R.layout.fragment_list, container, false)
     }

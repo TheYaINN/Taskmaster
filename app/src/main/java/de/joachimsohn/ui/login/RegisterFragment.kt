@@ -15,7 +15,7 @@ class RegisterFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return layoutInflater.inflate(R.layout.fragment_register, container, false)
+        return layoutInflater.inflate(R.layout.fragment_registration, container, false)
     }
 
 }
