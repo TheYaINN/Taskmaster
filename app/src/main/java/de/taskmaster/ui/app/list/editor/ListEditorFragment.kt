@@ -24,6 +24,7 @@ class ListEditorFragment : SubFragment(R.layout.fragment_list_edit) {
         picker.setOnDateChangedListener { _, year, monthOfYear, dayOfMonth ->
             deadlineDate.text = "${dayOfMonth}/${monthOfYear}/${year}"
         }
+
         view.findViewById<Button>(R.id.date_today).setOnClickListener {
             val current = LocalDateTime.now()
             picker.updateDate(current.year, current.monthValue, current.dayOfMonth)
@@ -43,5 +44,10 @@ class ListEditorFragment : SubFragment(R.layout.fragment_list_edit) {
                 else -> error("not supposed to happen")
             }
         }
+
+        view.findViewById<Button>(R.id.place).setOnClickListener {
+            findNavController().navigate(R.id.action_list_editor_to_mapsFragment)
+        }
     }
+
 }

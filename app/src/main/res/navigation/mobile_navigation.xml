@@ -64,6 +64,9 @@
         <action
             android:id="@+id/action_list_editor_to_repeatingEventFragment"
             app:destination="@id/repeatingEventFragment" />
+        <action
+            android:id="@+id/action_list_editor_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/group_editor"
@@ -78,6 +81,12 @@
     <fragment
         android:id="@+id/repeatingEventFragment"
         android:name="de.taskmaster.ui.app.list.editor.subeditors.RepeatingEventFragment"
-        android:label="RepeatingEventFragment" />
+        android:label="RepeatingEventFragment"
+        tools:layout="@layout/fragment_list_repeating" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="de.taskmaster.ui.app.list.editor.subeditors.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 
 </navigation>

@@ -12,7 +12,7 @@
             android:id="@+id/never"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Never again"
+            android:text="Does not repeat"
             android:textAlignment="center"
             android:textSize="20dp" />
 
