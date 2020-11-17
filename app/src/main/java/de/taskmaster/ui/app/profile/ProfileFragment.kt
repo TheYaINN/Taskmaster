@@ -2,32 +2,21 @@ package de.taskmaster.ui.app.profile
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import de.joachimsohn.BuildConfig
-import de.joachimsohn.R
-import de.joachimsohn.ui.app.AppActivity
-import de.joachimsohn.ui.login.LoginActivity
+import de.taskmaster.BuildConfig
+import de.taskmaster.R
+import de.taskmaster.ui.app.TopFragment
+import de.taskmaster.ui.login.LoginActivity
 
 
-class ProfileFragment : Fragment() {
+class ProfileFragment : TopFragment(R.layout.fragment_profile_private) {
 
     private lateinit var profileViewModel: ProfileViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View? {
-        profileViewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
-        (activity as AppActivity).supportActionBar.setDisplayHomeAsUpEnabled(false)
-        return inflater.inflate(R.layout.fragment_profile_private, container, false)
-    }
+    //TODO: implment this somehow profileViewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         view.findViewById<Button>(R.id.account_settings).setOnClickListener {

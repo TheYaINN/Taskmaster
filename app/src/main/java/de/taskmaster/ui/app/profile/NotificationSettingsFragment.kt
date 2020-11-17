@@ -1,5 +1,6 @@
 package de.taskmaster.ui.app.profile
 
-import de.joachimsohn.R
+import de.taskmaster.R
+import de.taskmaster.ui.app.SubFragment
 
 class NotificationSettingsFragment : SubFragment(R.layout.fragment_notification)

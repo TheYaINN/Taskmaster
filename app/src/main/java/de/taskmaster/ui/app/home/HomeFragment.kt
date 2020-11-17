@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import de.joachimsohn.R
-import de.joachimsohn.ui.elements.calendar.DateTextView
+import de.taskmaster.R
+import de.taskmaster.ui.elements.calendar.DateTextView
 
 class HomeFragment : Fragment() {
 

@@ -6,7 +6,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import de.joachimsohn.R
+import de.taskmaster.R
 
 class AppActivity : AppCompatActivity() {
 

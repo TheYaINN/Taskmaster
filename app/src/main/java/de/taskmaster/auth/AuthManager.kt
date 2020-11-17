@@ -4,7 +4,7 @@ class AuthManager {
 
     companion object {
 
-        fun login(userInformation: _root_ide_package_.de.taskmaster.auth.UserInformation): Boolean {
+        fun login(userInformation: UserInformation): Boolean {
             return userInformation.isValid()
         }
     }

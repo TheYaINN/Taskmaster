@@ -1,11 +1,10 @@
-package de.taskmaster.ui.app.profile
+package de.taskmaster.ui.app
 
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import de.joachimsohn.R
-import de.joachimsohn.ui.app.AppActivity
+import de.taskmaster.R
 
 open class SubFragment(private val resourceID: Int) : Fragment() {
 
@@ -14,7 +13,7 @@ open class SubFragment(private val resourceID: Int) : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        (activity as AppActivity).supportActionBar.apply {
+        (activity as AppActivity).supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)
             show()
         }
@@ -24,7 +23,7 @@ open class SubFragment(private val resourceID: Int) : Fragment() {
 
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        (activity as AppActivity).supportActionBar.setHomeAsUpIndicator(R.drawable.arrow_back)
+        (activity as AppActivity).supportActionBar?.setHomeAsUpIndicator(R.drawable.arrow_back)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

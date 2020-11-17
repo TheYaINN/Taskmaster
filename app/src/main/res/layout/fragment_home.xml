@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".ui.app.home.HomeFragment">
 
-    <com.marcohc.robotocalendar.RobotoCalendarView
+    <CalendarView
         android:id="@+id/home_calendar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

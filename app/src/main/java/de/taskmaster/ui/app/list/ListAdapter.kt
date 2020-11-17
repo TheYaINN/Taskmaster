@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import de.joachimsohn.R
+import de.taskmaster.R
 
 class ListAdapter : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
 

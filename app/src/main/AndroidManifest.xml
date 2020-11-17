@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.joachimsohn">
+    package="de.taskmaster">
 
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
@@ -21,6 +21,7 @@
         </activity>
         <activity
             android:name=".ui.app.AppActivity"
-            android:theme="@style/HiddenTitle"></activity>
+            android:theme="@style/HiddenTitle"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 </manifest>

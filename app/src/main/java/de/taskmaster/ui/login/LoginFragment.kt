@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import de.joachimsohn.R
+import de.taskmaster.R
 
 class LoginFragment : Fragment() {
 

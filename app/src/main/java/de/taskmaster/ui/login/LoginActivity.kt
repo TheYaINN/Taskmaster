@@ -10,10 +10,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.*
-import de.joachimsohn.R
-import de.joachimsohn.auth.LocalAuthHelper
-import de.joachimsohn.auth.UserInformation
-import de.joachimsohn.ui.app.AppActivity
+import de.taskmaster.R
+import de.taskmaster.auth.AuthManager
+import de.taskmaster.auth.LocalAuthHelper
+import de.taskmaster.auth.UserInformation
+import de.taskmaster.ui.app.AppActivity
 
 
 class LoginActivity : AppCompatActivity() {
@@ -23,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        if (_root_ide_package_.de.taskmaster.auth.AuthManager.login(
+        if (AuthManager.login(
                 LocalAuthHelper.getLoginInformation(
                     applicationContext
                 )
@@ -95,7 +96,7 @@ class LoginActivity : AppCompatActivity() {
         val username = findViewById<TextView>(R.id.username_email).text.toString()
         val password = findViewById<TextView>(R.id.password).text.toString()
 
-        if (_root_ide_package_.de.taskmaster.auth.AuthManager.login(
+        if (AuthManager.login(
                 UserInformation(
                     username,
                     password

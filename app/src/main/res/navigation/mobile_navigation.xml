@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="de.joachimsohn.ui.app.home.HomeFragment"
+        android:name="de.taskmaster.ui.app.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_list"
-        android:name="de.joachimsohn.ui.app.list.ListFragment"
+        android:name="de.taskmaster.ui.app.list.ListFragment"
         android:label="@string/title_list"
         tools:layout="@layout/fragment_list">
         <action
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/navigation_group"
-        android:name="de.joachimsohn.ui.app.group.GroupsFragment"
+        android:name="de.taskmaster.ui.app.group.GroupsFragment"
         android:label="@string/title_group"
         tools:layout="@layout/fragment_list">
         <action
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="de.joachimsohn.ui.app.profile.ProfileFragment"
+        android:name="de.taskmaster.ui.app.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile_private">
         <action
@@ -48,28 +48,36 @@
     </fragment>
     <fragment
         android:id="@+id/accountSettings"
-        android:name="de.joachimsohn.ui.app.profile.AccountSettingsFragment"
+        android:name="de.taskmaster.ui.app.profile.AccountSettingsFragment"
         android:label="AccountSettings"
         tools:layout="@layout/fragment_account_settings" />
     <fragment
         android:id="@+id/notification_settings"
-        android:name="de.joachimsohn.ui.app.profile.NotificationSettingsFragment"
+        android:name="de.taskmaster.ui.app.profile.NotificationSettingsFragment"
         android:label="NotificationSettings"
         tools:layout="@layout/fragment_notification" />
     <fragment
         android:id="@+id/list_editor"
-        android:name="de.joachimsohn.ui.app.list.ListEditorFragment"
+        android:name="de.taskmaster.ui.app.list.editor.ListEditorFragment"
         android:label="ListEditorFragment"
-        tools:layout="@layout/fragment_list_edit" />
+        tools:layout="@layout/fragment_list_edit">
+        <action
+            android:id="@+id/action_list_editor_to_repeatingEventFragment"
+            app:destination="@id/repeatingEventFragment" />
+    </fragment>
     <fragment
         android:id="@+id/group_editor"
-        android:name="de.joachimsohn.ui.app.group.GroupEditorFragment"
+        android:name="de.taskmaster.ui.app.group.GroupEditorFragment"
         android:label="GroupEditorFragment"
         tools:layout="@layout/fragment_group_edit" />
     <fragment
         android:id="@+id/publicProfileFragment"
-        android:name="de.joachimsohn.ui.app.profile.PublicProfileFragment"
+        android:name="de.taskmaster.ui.app.profile.PublicProfileFragment"
         android:label="PublicProfileFragment"
         tools:layout="@layout/fragment_profile_public" />
+    <fragment
+        android:id="@+id/repeatingEventFragment"
+        android:name="de.taskmaster.ui.app.list.editor.subeditors.RepeatingEventFragment"
+        android:label="RepeatingEventFragment" />
 
 </navigation>
