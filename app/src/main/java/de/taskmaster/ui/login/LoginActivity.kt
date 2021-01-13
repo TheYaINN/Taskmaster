@@ -11,9 +11,8 @@ import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.*
 import de.taskmaster.R
-import de.taskmaster.auth.AuthManager
+import de.taskmaster.ServerConnector
 import de.taskmaster.auth.LocalAuthHelper
-import de.taskmaster.auth.UserInformation
 import de.taskmaster.ui.app.AppActivity
 
 
@@ -24,10 +23,10 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        if (AuthManager.login(
-                LocalAuthHelper.getLoginInformation(
-                    applicationContext
-                )
+        if (LocalAuthHelper.login(
+                LocalAuthHelper.getLoginInformation(applicationContext),
+                false,
+                applicationContext
             )
         ) {
             startMainActivity()
@@ -93,19 +92,13 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun tryLogin(view: View) {
-        val username = findViewById<TextView>(R.id.username_email).text.toString()
-        val password = findViewById<TextView>(R.id.password).text.toString()
+        val username = view.findViewById<TextView>(R.id.username_email).text.toString()
+        val password = view.findViewById<TextView>(R.id.password).text.toString()
+        val rememberUser = view.findViewById<CheckBox>(R.id.remember_password).isChecked
 
-        if (AuthManager.login(
-                UserInformation(
-                    username,
-                    password
-                )
-            )
-        ) {
-            if (findViewById<CheckBox>(R.id.remember_password).isChecked) {
-                LocalAuthHelper.saveLoginInformation(applicationContext, username, password)
-            }
+        ServerConnector.INSTANCE.postRequest(username, password)
+
+        if (LocalAuthHelper.login(username to password, rememberUser, applicationContext)) {
             startMainActivity()
         } else {
             //TODO: show some error on UI
