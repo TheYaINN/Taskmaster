@@ -1,0 +1,6 @@
+[submodule "Server"]
+	path = Server
+	url = https://github.com/TheYaINN/TaskMaster-Server.git
+[submodule "App"]
+	path = App
+	url = https://github.com/TheYaINN/TaskMaster-App.git
