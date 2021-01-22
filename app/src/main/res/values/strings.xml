@@ -10,4 +10,17 @@
     <string name="title_group">Groups</string>
     <string name="title_list">Lists</string>
     <string name="application_name">TaskMaster</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="more">More</string>
+    <string name="members">Members</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="tags">Tags</string>
+    <string name="description">Description</string>
+    <string name="wiederholen">Wiederholen</string>
+    <string name="ort">Ort</string>
+    <string name="title">Title</string>
+    <string name="gruppe">Gruppe</string>
+    <string name="name">Name</string>
 </resources>

@@ -13,6 +13,8 @@ import java.time.LocalDateTime
 
 class ListEditorFragment : SubFragment(R.layout.fragment_list_edit) {
 
+    val model = ListEditorViewModel()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         view.findViewById<Button>(R.id.recurring).setOnClickListener {
             findNavController().navigate(R.id.action_list_editor_to_repeatingEventFragment)

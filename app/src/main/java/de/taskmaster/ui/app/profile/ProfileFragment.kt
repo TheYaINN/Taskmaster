@@ -5,15 +5,15 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import de.taskmaster.BuildConfig
 import de.taskmaster.R
-import de.taskmaster.ui.app.TopFragment
+import de.taskmaster.auth.LocalAuthHelper
+import de.taskmaster.ui.app.TopLevelFragment
 import de.taskmaster.ui.login.LoginActivity
 
 
-class ProfileFragment : TopFragment(R.layout.fragment_profile_private) {
+class ProfileFragment : TopLevelFragment(R.layout.fragment_profile_private) {
 
     private lateinit var profileViewModel: ProfileViewModel
     //TODO: implment this somehow profileViewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
@@ -23,10 +23,7 @@ class ProfileFragment : TopFragment(R.layout.fragment_profile_private) {
             findNavController().navigate(R.id.action_navigation_profile_to_accountSettings)
         }
         view.findViewById<Button>(R.id.sign_out).setOnClickListener {
-            requireContext().getSharedPreferences(
-                "Taskmaster-Login",
-                AppCompatActivity.MODE_PRIVATE
-            ).edit().clear().apply()
+            LocalAuthHelper.removeLoginInformation(requireContext())
             startActivity(Intent(requireContext(), LoginActivity::class.java))
             requireActivity().finish()
         }

@@ -20,14 +20,7 @@ class AppActivity : AppCompatActivity() {
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
-
-        supportActionBar?.let {
-            it.setHomeAsUpIndicator(R.drawable.home_filled)
-            it.setDisplayHomeAsUpEnabled(true)
-            it.setDisplayShowHomeEnabled(true)
-            it.setDisplayShowTitleEnabled(false)
-        }
+        supportActionBar?.setDisplayShowTitleEnabled(false)
     }
-
 
 }

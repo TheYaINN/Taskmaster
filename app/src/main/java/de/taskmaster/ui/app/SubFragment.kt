@@ -6,13 +6,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import de.taskmaster.R
 
-open class SubFragment(private val resourceID: Int) : Fragment() {
+abstract class SubFragment(private val resourceID: Int) : Fragment(), Savable {
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         (activity as AppActivity).supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)
             show()
@@ -24,16 +20,25 @@ open class SubFragment(private val resourceID: Int) : Fragment() {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         (activity as AppActivity).supportActionBar?.setHomeAsUpIndicator(R.drawable.arrow_back)
+        inflater.inflate(R.menu.save, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             android.R.id.home -> {
                 findNavController().popBackStack()
+                (activity as AppActivity).supportActionBar?.setDisplayHomeAsUpEnabled(false)
                 true
+            }
+            R.id.save_action -> {
+                save()
             }
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    override fun save(): Boolean {
+        return false
     }
 
 }

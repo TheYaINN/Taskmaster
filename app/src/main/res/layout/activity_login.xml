@@ -55,6 +55,8 @@
                     app:tabMode="fixed"
                     app:tabRippleColor="@null"
                     app:tabTextColor="@color/Secondary" />
+
+
             </FrameLayout>
 
             <androidx.viewpager.widget.ViewPager

@@ -11,10 +11,10 @@ import de.taskmaster.R
 
 class GroupsFragment : Fragment() {
 
-    private lateinit var groupsViewModel: GroupsViewModel
+    private lateinit var groupsViewModel: GroupsEditorViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        groupsViewModel = ViewModelProvider(this).get(GroupsViewModel::class.java)
+        groupsViewModel = ViewModelProvider(this).get(GroupsEditorViewModel::class.java)
         setHasOptionsMenu(true)
         return inflater.inflate(R.layout.fragment_group, container, false)
     }

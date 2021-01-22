@@ -8,11 +8,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import de.taskmaster.R
-import de.taskmaster.ui.app.TopFragment
+import de.taskmaster.ui.app.TopLevelFragment
 
-class ListFragment : TopFragment(R.layout.fragment_list) {
-
-    private lateinit var listViewModel: ListViewModel
+class ListFragment : TopLevelFragment(R.layout.fragment_list) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         view.findViewById<FloatingActionButton>(R.id.add_item).setOnClickListener {

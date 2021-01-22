@@ -3,7 +3,6 @@ package de.taskmaster.auth
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity.MODE_PRIVATE
-import de.taskmaster.ServerConnector
 
 class LocalAuthHelper {
 
@@ -12,20 +11,15 @@ class LocalAuthHelper {
         private const val usernameKey = "username"
         private const val passwordKey = "password"
 
-        fun login(
-            userData: Pair<String, String>,
-            rememberUser: Boolean,
-            context: Context
-        ): Boolean {
-            val response =
-                ServerConnector.INSTANCE.postRequest("login", userData.first, userData.second)
-            if (response == "successful") {
+        fun login(userData: Pair<String, String>, rememberUser: Boolean, context: Context): Boolean {
+            //val response = ServerConnector.INSTANCE.postRequest("login", userData.first, userData.second)
+            if (true) {
                 if (rememberUser) {
                     saveLoginInformation(context, userData.first, userData.second)
                 }
                 return true
             }
-            return return false
+            return false
         }
 
 
@@ -44,6 +38,11 @@ class LocalAuthHelper {
             requireNotNull(username)
             requireNotNull(password)
             return Pair(username, password)
+        }
+
+        fun removeLoginInformation(context: Context) {
+            context.getSharedPreferences("Taskmaster-Login", MODE_PRIVATE)
+                .edit().clear().apply()
         }
     }
 

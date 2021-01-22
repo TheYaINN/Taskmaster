@@ -5,10 +5,10 @@ import java.net.URL
 
 class ServerConnector : APIConnector {
 
-    private val server = "217.160.242.136:3308"
+    private val server = "217.160.242.136:8085"
 
     override fun postRequest(vararg arguments: String): String {
-        val url = URL(server + arguments.first())
+        val url = URL("$server/${arguments.first()}")
         val connection = url.openConnection()
         val out = BufferedOutputStream(connection.getOutputStream())
 
@@ -27,7 +27,6 @@ class ServerConnector : APIConnector {
 
         return response.readText()
     }
-
 
     companion object {
         val INSTANCE: APIConnector = ServerConnector()

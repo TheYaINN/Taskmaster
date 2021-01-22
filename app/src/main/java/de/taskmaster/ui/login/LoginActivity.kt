@@ -23,12 +23,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        if (LocalAuthHelper.login(
-                LocalAuthHelper.getLoginInformation(applicationContext),
-                false,
-                applicationContext
-            )
-        ) {
+        if (LocalAuthHelper.login(LocalAuthHelper.getLoginInformation(applicationContext), false, applicationContext)) {
             startMainActivity()
         }
         setupUI()
@@ -53,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
         register.text = "Register"
         tabLayout.addTab(register)
 
-        viewPager.adapter = TabAdapter(2, this, supportFragmentManager)
+        viewPager.adapter = LoginTabAdapter(2, this, supportFragmentManager)
         tabLayout.setupWithViewPager(viewPager)
         viewPager.addOnPageChangeListener(TabLayoutOnPageChangeListener(tabLayout))
         tabLayout.addOnTabSelectedListener(object : OnTabSelectedListener {
