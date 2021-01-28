@@ -4,14 +4,14 @@ import de.taskmaster.db.AppDataBaseContext
 import de.taskmaster.db.dao.UserDAO
 import de.taskmaster.db.dao.model.User
 
-class UserDAOImpl(private val context: AppDataBaseContext) : UserDAO {
+class UserDAOImpl(private val context: AppDataBaseContext<User>) : UserDAO {
 
     override fun get(id: Int) {
         TODO("Not yet implemented")
     }
 
     override fun insert(user: User) {
-        context.fetchData(user::class.java)
+        //context.fetchData("/someEndpoint",user::class.java)
     }
 
     override fun delete(user: User) {

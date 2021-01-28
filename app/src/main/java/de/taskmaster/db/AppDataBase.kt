@@ -3,7 +3,6 @@ package de.taskmaster.db
 import android.content.Context
 import de.taskmaster.db.dao.UserDAO
 import de.taskmaster.db.dao.impl.UserDAOImpl
-import de.taskmaster.db.dao.model.User
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.net.HttpURLConnection
@@ -30,7 +29,7 @@ abstract class AppDataBase {
 class AppDataBaseImpl : AppDataBase() {
 
     private val userDAO: UserDAO
-        get() = UserDAOImpl(AppDataBaseContext<User>())
+        get() = UserDAOImpl(AppDataBaseContext())
 
 
     override fun UserDAO(): UserDAO {
