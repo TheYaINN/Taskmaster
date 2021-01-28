@@ -6,7 +6,11 @@
 
         <variable
             name="model"
-            type="de.taskmaster.db.dao.model.List" />
+            type="de.taskmaster.model.data.MyList" />
+
+        <variable
+            name="presenter"
+            type="de.taskmaster.model.binding.ListEditorPresenter" />
     </data>
 
     <ScrollView
@@ -72,11 +76,17 @@
                         android:hint="@string/description"
                         android:inputType="textMultiLine" />
 
-                    <include layout="@layout/component_place" />
+                    <include
+                        android:id="@+id/component_place"
+                        layout="@layout/component_place" />
 
-                    <include layout="@layout/component_repeating" />
+                    <include
+                        android:id="@+id/component_repeating"
+                        layout="@layout/component_repeating" />
 
-                    <include layout="@layout/component_group" />
+                    <include
+                        android:id="@+id/component_group"
+                        layout="@layout/component_group" />
 
                     <EditText
                         android:id="@+id/tags"

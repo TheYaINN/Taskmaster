@@ -14,7 +14,6 @@ class GroupEditorFragment : SubFragment(R.layout.fragment_group_edit) {
         val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
         val viewPager = view.findViewById<ViewPager>(R.id.viewPager)
         viewPager.adapter = GroupTabAdapter(2, requireActivity().supportFragmentManager)
-        tabLayout.addTab(tabLayout.newTab())
         tabLayout.setupWithViewPager(viewPager)
         super.onViewCreated(view, savedInstanceState)
     }

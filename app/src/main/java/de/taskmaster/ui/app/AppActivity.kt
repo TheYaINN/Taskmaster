@@ -8,7 +8,6 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import de.taskmaster.R
-import de.taskmaster.db.DBConnector
 import de.taskmaster.db.dao.model.User
 import kotlinx.coroutines.launch
 

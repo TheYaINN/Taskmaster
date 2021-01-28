@@ -5,16 +5,24 @@ import android.view.View
 import android.widget.Button
 import android.widget.DatePicker
 import android.widget.LinearLayout
-import android.widget.ScrollView
 import android.widget.TextView
 import de.taskmaster.R
-import de.taskmaster.R.string.edit
+import de.taskmaster.databinding.FragmentListEditBinding
+import de.taskmaster.model.binding.ListEditorContract
+import de.taskmaster.model.binding.ListEditorPresenter
+import de.taskmaster.model.data.MyList
 import de.taskmaster.ui.app.SubFragment
 import java.time.LocalDateTime
 
-class ListEditorFragment : SubFragment(R.layout.fragment_list_edit) {
+class ListEditorFragment : SubFragment(R.layout.fragment_list_edit), ListEditorContract.View {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val fragmentBinding = FragmentListEditBinding.inflate(layoutInflater)
+        fragmentBinding.presenter = ListEditorPresenter(this, requireContext())
+        fragmentBinding.model = MyList()
+
+
+        //TODO: refactor
         val picker = view.findViewById<DatePicker>(R.id.deadline_picker)
 
         view.findViewById<Button>(R.id.date_today).setOnClickListener {
@@ -32,65 +40,21 @@ class ListEditorFragment : SubFragment(R.layout.fragment_list_edit) {
 
         val test = view.findViewById<LinearLayout>(R.id.place_linearLayout)
         test.addView(TextView(context).apply { text = "FICKEEEEN" })
+    }
 
-        val toggle = view.findViewById<TextView>(R.id.edit_deadline)
+    override fun toggle(caller: Int) {
+        val view = requireView()
+        val layoutID = R.id::class.java.fields.find { it.name == "lower_$caller" }?.get(this) ?: error("Could not access field")
+        val toggle = view.findViewById<TextView>(caller)
         toggle.setOnClickListener {
-            val pickerLayout = view.findViewById<LinearLayout>(R.id.lower_deadline)
+            val pickerLayout = view.findViewById<View>(layoutID as Int)
             pickerLayout.visibility = when (pickerLayout.visibility) {
                 View.GONE -> {
                     toggle.text = getString(R.string.select)
                     View.VISIBLE
                 }
                 View.VISIBLE -> {
-                    toggle.text = getString(edit)
-                    View.GONE
-                }
-                else -> error("not supposed to happen")
-            }
-        }
-
-        val toggle2 = view.findViewById<TextView>(R.id.edit_repeating)
-        toggle2.setOnClickListener {
-            val pickerLayout = view.findViewById<LinearLayout>(R.id.lower_repeating)
-            pickerLayout.visibility = when (pickerLayout.visibility) {
-                View.GONE -> {
-                    toggle2.text = getString(R.string.select)
-                    View.VISIBLE
-                }
-                View.VISIBLE -> {
-                    toggle2.text = getString(edit)
-                    View.GONE
-                }
-                else -> error("not supposed to happen")
-            }
-        }
-
-        val toggle3 = view.findViewById<TextView>(R.id.edit_place)
-        toggle3.setOnClickListener {
-            val pickerLayout = view.findViewById<ScrollView>(R.id.lower_place)
-            pickerLayout.visibility = when (pickerLayout.visibility) {
-                View.GONE -> {
-                    toggle3.text = getString(R.string.select)
-                    View.VISIBLE
-                }
-                View.VISIBLE -> {
-                    toggle3.text = getString(edit)
-                    View.GONE
-                }
-                else -> error("not supposed to happen")
-            }
-        }
-
-        val toggle4 = view.findViewById<TextView>(R.id.edit_group)
-        toggle4.setOnClickListener {
-            val pickerLayout = view.findViewById<LinearLayout>(R.id.lower_group)
-            pickerLayout.visibility = when (pickerLayout.visibility) {
-                View.GONE -> {
-                    toggle4.text = getString(R.string.select)
-                    View.VISIBLE
-                }
-                View.VISIBLE -> {
-                    toggle4.text = getString(edit)
+                    toggle.text = getString(R.string.edit)
                     View.GONE
                 }
                 else -> error("not supposed to happen")
