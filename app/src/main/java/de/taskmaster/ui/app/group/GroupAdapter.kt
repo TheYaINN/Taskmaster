@@ -9,7 +9,6 @@ import de.taskmaster.R
 
 class GroupAdapter : RecyclerView.Adapter<GroupAdapter.GroupViewHolder>() {
 
-    //TODO("Add Datasource as object, that handles everything that has to do with the data")
     private lateinit var listView: CardView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GroupViewHolder {

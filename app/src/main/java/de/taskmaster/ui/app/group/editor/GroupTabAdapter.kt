@@ -1,4 +1,4 @@
-package de.taskmaster.ui.app.group
+package de.taskmaster.ui.app.group.editor
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

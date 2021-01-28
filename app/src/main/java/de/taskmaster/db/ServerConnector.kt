@@ -1,6 +1,11 @@
-package de.taskmaster
+package de.taskmaster.db
 
-import java.io.*
+import java.io.BufferedInputStream
+import java.io.BufferedOutputStream
+import java.io.BufferedReader
+import java.io.BufferedWriter
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
 import java.net.URL
 
 class ServerConnector : APIConnector {

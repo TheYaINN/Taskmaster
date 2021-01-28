@@ -9,7 +9,8 @@ import de.taskmaster.R
 
 class ListAdapter : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
 
-    //TODO("Add Datasource as object, that handles everything that has to do with the data")
+
+    //TODO: nothing has been done in here, just added so the code works for now
     private lateinit var listView: CardView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
@@ -19,11 +20,11 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        holder.bind() //TODO: add missing object to be binded as param to method
+        holder.bind()
     }
 
     override fun getItemCount(): Int {
-        TODO()
+        return 0
     }
 
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

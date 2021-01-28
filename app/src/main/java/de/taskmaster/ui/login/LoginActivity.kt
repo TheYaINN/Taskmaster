@@ -9,10 +9,13 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayout.*
+import com.google.android.material.tabs.TabLayout.GRAVITY_FILL
+import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
+import com.google.android.material.tabs.TabLayout.Tab
+import com.google.android.material.tabs.TabLayout.TabLayoutOnPageChangeListener
 import de.taskmaster.R
-import de.taskmaster.ServerConnector
 import de.taskmaster.auth.LocalAuthHelper
+import de.taskmaster.db.ServerConnector
 import de.taskmaster.ui.app.AppActivity
 
 
@@ -36,6 +39,7 @@ class LoginActivity : AppCompatActivity() {
 
 
     private fun setupUI() {
+        //TODO: refactor the shit out of this pls!
         val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
         val viewPager = findViewById<ViewPager>(R.id.viewPager)
         val indicator = findViewById<View>(R.id.tab_indicator)
@@ -72,7 +76,7 @@ class LoginActivity : AppCompatActivity() {
             override fun onPageScrolled(
                 position: Int,
                 positionOffset: Float,
-                positionOffsetPixels: Int
+                positionOffsetPixels: Int,
             ) {
                 val params = indicator.layoutParams as FrameLayout.LayoutParams
                 val translationOffset: Float = (positionOffset + position) * indicatorWidth

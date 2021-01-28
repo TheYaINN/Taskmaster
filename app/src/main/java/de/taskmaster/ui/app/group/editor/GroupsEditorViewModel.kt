@@ -1,4 +1,4 @@
-package de.taskmaster.ui.app.group
+package de.taskmaster.ui.app.group.editor
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

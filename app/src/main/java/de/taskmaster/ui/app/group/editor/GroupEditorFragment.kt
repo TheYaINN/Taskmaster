@@ -1,4 +1,4 @@
-package de.taskmaster.ui.app.group
+package de.taskmaster.ui.app.group.editor
 
 import android.os.Bundle
 import android.view.View
@@ -10,6 +10,7 @@ import de.taskmaster.ui.app.SubFragment
 class GroupEditorFragment : SubFragment(R.layout.fragment_group_edit) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        //TODO: refactor
         val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
         val viewPager = view.findViewById<ViewPager>(R.id.viewPager)
         viewPager.adapter = GroupTabAdapter(2, requireActivity().supportFragmentManager)

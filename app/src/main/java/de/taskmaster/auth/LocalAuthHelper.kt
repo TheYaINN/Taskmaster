@@ -12,6 +12,7 @@ class LocalAuthHelper {
         private const val passwordKey = "password"
 
         fun login(userData: Pair<String, String>, rememberUser: Boolean, context: Context): Boolean {
+            //FIXME
             //val response = ServerConnector.INSTANCE.postRequest("login", userData.first, userData.second)
             if (true) {
                 if (rememberUser) {
@@ -24,7 +25,7 @@ class LocalAuthHelper {
 
 
         fun saveLoginInformation(context: Context, username: String, password: String) {
-            val sp = context.getSharedPreferences("Taskmaster-Login", MODE_PRIVATE)
+            val sp = context.getSharedPreferences(preferencesKey, MODE_PRIVATE)
             val editor: SharedPreferences.Editor = sp.edit()
             editor.putString("username", username)
             editor.putString("password", password)
@@ -41,7 +42,7 @@ class LocalAuthHelper {
         }
 
         fun removeLoginInformation(context: Context) {
-            context.getSharedPreferences("Taskmaster-Login", MODE_PRIVATE)
+            context.getSharedPreferences(preferencesKey, MODE_PRIVATE)
                 .edit().clear().apply()
         }
     }

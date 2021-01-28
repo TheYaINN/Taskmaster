@@ -70,7 +70,7 @@
     </fragment>
     <fragment
         android:id="@+id/group_editor"
-        android:name="de.taskmaster.ui.app.group.GroupEditorFragment"
+        android:name="de.taskmaster.ui.app.group.editor.GroupEditorFragment"
         android:label="GroupEditorFragment"
         tools:layout="@layout/fragment_group_edit" />
     <fragment

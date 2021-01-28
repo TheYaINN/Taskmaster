@@ -1,4 +1,4 @@
-package de.taskmaster
+package de.taskmaster.db
 
 interface APIConnector {
 
