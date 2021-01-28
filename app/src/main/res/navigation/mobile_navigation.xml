@@ -50,7 +50,7 @@
         android:id="@+id/accountSettings"
         android:name="de.taskmaster.ui.app.profile.AccountSettingsFragment"
         android:label="AccountSettings"
-        tools:layout="@layout/fragment_account_settings" />
+        tools:layout="@layout/fragment_profile_edit" />
     <fragment
         android:id="@+id/notification_settings"
         android:name="de.taskmaster.ui.app.profile.NotificationSettingsFragment"
