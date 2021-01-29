@@ -9,8 +9,4 @@ class ListEditorPresenter(val view: ListEditorContract.View, val context: Contex
         this.view.toggle(view.id)
     }
 
-    fun toggleView() {
-        this.view.toggle(0)
-    }
-
 }

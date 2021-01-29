@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.DatePicker
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
 import de.taskmaster.R
 import de.taskmaster.databinding.FragmentListEditBinding
 import de.taskmaster.model.binding.ListEditorContract
@@ -16,12 +17,14 @@ import java.time.LocalDateTime
 
 class ListEditorFragment : SubFragment(R.layout.fragment_list_edit), ListEditorContract.View {
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val fragmentBinding = FragmentListEditBinding.inflate(layoutInflater)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        val fragmentBinding = DataBindingUtil.setContentView<FragmentListEditBinding>(requireActivity(), R.layout.fragment_list_edit)
         fragmentBinding.presenter = ListEditorPresenter(this, requireContext())
         fragmentBinding.model = MyList()
+        super.onCreate(savedInstanceState)
+    }
 
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         //TODO: refactor
         val picker = view.findViewById<DatePicker>(R.id.deadline_picker)
 

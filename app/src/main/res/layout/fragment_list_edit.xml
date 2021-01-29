@@ -48,7 +48,10 @@
                         android:inputType="textPersonName"
                         android:text="@{model.title}" />
 
-                    <include layout="@layout/component_deadline" />
+                    <include
+                        layout="@layout/component_deadline"
+                        app:model="@{model}"
+                        app:presenter="@{presenter}" />
 
                 </LinearLayout>
 

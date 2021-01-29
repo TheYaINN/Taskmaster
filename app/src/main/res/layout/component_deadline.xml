@@ -10,10 +10,6 @@
         <variable
             name="presenter"
             type="de.taskmaster.model.binding.ListEditorPresenter" />
-
-        <variable
-            name="handlers"
-            type="de.taskmaster.model.binding.MyHandlers" />
     </data>
 
     <RelativeLayout
@@ -44,7 +40,7 @@
                 android:id="@+id/edit_deadline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="@{handlers::onClickFriend}"
+                android:onClick="@{presenter::toggleView}"
                 android:text="@string/edit"
                 android:textColor="@color/link" />
         </LinearLayout>
