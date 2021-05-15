@@ -1,1 +1,157 @@
-<mxfile host="app.diagrams.net" modified="2021-05-15T09:51:36.367Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.214 Safari/537.36" version="14.2.4" etag="pkyCtTMgM0DSN4Tyv6WN" type="github"><diagram id="jHvwGlfS95X4y0J_EDvx">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-15T10:12:42.657Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.214 Safari/537.36" etag="Jtsal_aQcY4nJBvmNtaf" version="14.2.4" type="github">
+  <diagram id="jHvwGlfS95X4y0J_EDvx" name="Page-1">
+    <mxGraphModel dx="1173" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-1" value="Actor I - Will verwalten" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="800" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-2" value="Actor II - Will suchen" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="610" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-3" value="Actor III - Will anmelden" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="410" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-4" value="Actor IV - Will Benutzer löschen" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="380" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-5" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="150" y="395" width="489" height="489" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-7" target="TeREo4Fam6XKq2Q9hgFD-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-20" value="&amp;lt;enxtends&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TeREo4Fam6XKq2Q9hgFD-16">
+          <mxGeometry x="-0.1959" y="1" relative="1" as="geometry">
+            <mxPoint x="-1.02" y="-10.29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-7" target="TeREo4Fam6XKq2Q9hgFD-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="316" y="760" />
+              <mxPoint x="316" y="725" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-21" value="&amp;lt;includes&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TeREo4Fam6XKq2Q9hgFD-17">
+          <mxGeometry x="-0.1776" y="-1" relative="1" as="geometry">
+            <mxPoint x="2.969999999999999" y="3.7300000000000004" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-7" value="TodoListe erstellen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="760" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-8" value="Aufgabe erstellen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="760" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-9" target="TeREo4Fam6XKq2Q9hgFD-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-23" value="&amp;lt;includes&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TeREo4Fam6XKq2Q9hgFD-19">
+          <mxGeometry x="0.0553" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1.02" y="-0.74" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-9" value="Aufgabe bearbeiten" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="820" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.458;entryY=-0.014;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-10" target="TeREo4Fam6XKq2Q9hgFD-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-22" value="&amp;lt;extends&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TeREo4Fam6XKq2Q9hgFD-18">
+          <mxGeometry x="0.0085" y="-1" relative="1" as="geometry">
+            <mxPoint x="0.01" y="4.86" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-10" value="ToDoList bearbeiten" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="710" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-11" target="TeREo4Fam6XKq2Q9hgFD-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-31" value="&amp;lt;extends&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TeREo4Fam6XKq2Q9hgFD-29">
+          <mxGeometry x="-0.2429" y="2" relative="1" as="geometry">
+            <mxPoint x="2.86" y="7.97" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-11" target="TeREo4Fam6XKq2Q9hgFD-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-46" value="&amp;lt;extends&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TeREo4Fam6XKq2Q9hgFD-30">
+          <mxGeometry x="-0.3478" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-11" value="Gruppe erstellen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="670" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-12" value="Mitglied hinzufügen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="610" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-13" value="ToDoListe hinzufügen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="610" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-25" value="" style="endArrow=classic;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-1" target="TeREo4Fam6XKq2Q9hgFD-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="154" y="900" as="sourcePoint" />
+            <mxPoint x="204" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-28" value="" style="endArrow=classic;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-1" target="TeREo4Fam6XKq2Q9hgFD-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="135" y="850" as="sourcePoint" />
+            <mxPoint x="190" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-34" value="ToDoListe suchen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="585" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-35" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-2" target="TeREo4Fam6XKq2Q9hgFD-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="880" as="sourcePoint" />
+            <mxPoint x="230" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-36" value="Benutzer registrieren" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="555" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-37" target="TeREo4Fam6XKq2Q9hgFD-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-40" value="&amp;lt;includes&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TeREo4Fam6XKq2Q9hgFD-39">
+          <mxGeometry x="-0.3671" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-37" value="Benutzer anmelden" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="495" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-38" value="" style="endArrow=classic;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-3" target="TeREo4Fam6XKq2Q9hgFD-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="670" as="sourcePoint" />
+            <mxPoint x="230" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-41" target="TeREo4Fam6XKq2Q9hgFD-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-45" value="&amp;lt;includes&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TeREo4Fam6XKq2Q9hgFD-44">
+          <mxGeometry x="-0.2663" y="-1" relative="1" as="geometry">
+            <mxPoint y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-41" value="Benutzer löschen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="440" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TeREo4Fam6XKq2Q9hgFD-43" value="" style="endArrow=classic;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TeREo4Fam6XKq2Q9hgFD-4" target="TeREo4Fam6XKq2Q9hgFD-41">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="670" as="sourcePoint" />
+            <mxPoint x="230" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
