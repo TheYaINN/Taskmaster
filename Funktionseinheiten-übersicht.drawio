@@ -1,1 +1,184 @@
-<mxfile host="app.diagrams.net" modified="2021-05-16T12:05:57.877Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.214 Safari/537.36" version="14.6.13" etag="wPAgcApxc6VRNt7WCZa7" type="github"><diagram id="2-n4D7t_erXuSB0dBn76">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-16T12:30:08.735Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.214 Safari/537.36" etag="v4vyqnqXFWg7HlOH1Zr8" version="14.6.13" type="github">
+  <diagram id="2-n4D7t_erXuSB0dBn76" name="Page-1">
+    <mxGraphModel dx="1710" dy="944" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-1" target="hl-aqmem9rXFeyPLP5Kx-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="382" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-2" target="hl-aqmem9rXFeyPLP5Kx-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-2" value="Benutzer Registrieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="190" width="106" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-5" target="hl-aqmem9rXFeyPLP5Kx-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="407" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-5" value="Benutzereingaben abwarten" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="338.5" y="250" width="137" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-9" target="hl-aqmem9rXFeyPLP5Kx-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-19" value="Fehlerhafte Eingabe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hl-aqmem9rXFeyPLP5Kx-16">
+          <mxGeometry x="-0.6734" relative="1" as="geometry">
+            <mxPoint x="27" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-9" target="hl-aqmem9rXFeyPLP5Kx-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-22" value="Korrekte Eingabe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hl-aqmem9rXFeyPLP5Kx-21">
+          <mxGeometry x="-0.224" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-9" value="Benutzereingaben überprüfen" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345.5" y="430" width="123" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-11" target="hl-aqmem9rXFeyPLP5Kx-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-11" value="Benutzer beendet eingabe" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="320" width="106" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-12" target="hl-aqmem9rXFeyPLP5Kx-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-12" value="Benutzer bestätigt durch registrieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="380" width="106" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="604" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-15" value="Hinweis über fehlerhafte Eingaben" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="310" width="167" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-20" target="hl-aqmem9rXFeyPLP5Kx-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-20" value="Neuen Benutzer in der Datenbank ablegen" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="347" y="590" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-26" target="hl-aqmem9rXFeyPLP5Kx-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-41" value="Fehlerhafte Eingabe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hl-aqmem9rXFeyPLP5Kx-39">
+          <mxGeometry x="-0.6969" y="-2" relative="1" as="geometry">
+            <mxPoint x="16" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-26" target="hl-aqmem9rXFeyPLP5Kx-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-48" value="Korrekte Eingabe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hl-aqmem9rXFeyPLP5Kx-47">
+          <mxGeometry x="-0.336" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-26" value="Benutzereingaben überprüfen" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345.5" y="910" width="123" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="603" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-28" value="Hinweis über fehlerhafte Eingaben" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="760" width="167" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-29" target="hl-aqmem9rXFeyPLP5Kx-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-29" value="Benutzer will sich anmelden" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="347" y="670" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-32" target="hl-aqmem9rXFeyPLP5Kx-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-32" value="Benutzereingaben abwarten" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="338.5" y="720" width="137" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-33" target="hl-aqmem9rXFeyPLP5Kx-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-33" value="Benutzer beendet eingabe" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="790" width="106" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-34" target="hl-aqmem9rXFeyPLP5Kx-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-34" value="Benutzer bestätigt durch login" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="850" width="106" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-45" target="hl-aqmem9rXFeyPLP5Kx-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-45" value="Benutzer erstellt Gruppe" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="234" y="1120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-46" target="hl-aqmem9rXFeyPLP5Kx-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-46" target="hl-aqmem9rXFeyPLP5Kx-45">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="407" y="1140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-46" value="AppActivity starten" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="347" y="1060" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-49" target="hl-aqmem9rXFeyPLP5Kx-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-49" value="ToDoListe erstellen" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-52" target="hl-aqmem9rXFeyPLP5Kx-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-52" value="Benutzereingaben abwarten" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="331.5" y="1210" width="137" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-53" target="hl-aqmem9rXFeyPLP5Kx-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-53" value="Benutzer beendet eingabe" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="347" y="1280" width="106" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-57" target="hl-aqmem9rXFeyPLP5Kx-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-57" value="Benutzer bestätigt durch speichern" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="347" y="1330" width="106" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hl-aqmem9rXFeyPLP5Kx-64" target="hl-aqmem9rXFeyPLP5Kx-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-64" value="Objekt in der DB speichern" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1380" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hl-aqmem9rXFeyPLP5Kx-74" value="Ende" style="ellipse;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="375" y="1430" width="50" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
